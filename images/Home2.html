@@ -1,0 +1,373 @@
+<html lan="en">
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"
+		<title> Home - Romofy Agro </title>
+		<style>
+			a {
+				text-decoration: none;
+				color: inherit;
+			}
+			header {
+				width: 100%;
+				border: 0.1px solid red;
+			}
+			#header {
+				width: 100%;
+				border: 0.1px solid black;
+				background-color: #5bb45b;
+				padding: 10px;
+				display: flex;
+				justify-content: space-around;
+			}
+			#header div {
+				font: 12px arial;
+				color: white;
+				border: 0.1px solid red;
+			}
+			nav {
+				width: 100%;
+				background: white;
+				padding: 10px;
+				border: 0.1px solid yellow;
+				display: flex;
+				justify-content: space-around;
+			}
+			.nav_container {
+				width: 1170px;
+				margin: auto;
+				display: flex;
+				justify-content: space-between;
+				border: 0.1px solid black;
+			}
+
+			.navigation ul {
+				height: 100%;
+				padding: 10px;
+				border: 0.1px solid black;
+				display: flex;
+				align-items: center;
+			}			
+			.navigation ul li {
+				text-align: center;
+				padding: 15px 25px;
+				margin-left: 10px;
+				font: 20px arial;
+				border: 0.1px solid black;
+			}
+			.cat {
+				border: 0.1px solid black;
+				padding: 25px 10px;
+				position: relative;
+				margin-left: 150px;
+			}
+			.cat_list {
+				border: 0.1px solid black;
+				list-style: none;
+				text-align: center;
+				display: none;
+				position: absolute;
+				top: 70px;
+				left: 0px;
+				z-index: 9999;
+			}
+			.cat_list li {
+				border: 0.1px solid black;
+				font: 16px arial;
+				padding: 15px 25px;
+			}
+			main {
+				width: 1170px;
+				height: 500px;
+				margin: auto;
+				border: 0.1px solid black;
+			}
+			.banner {
+				height: 100vh;
+				background: url('header-02.jpg') no-repeat center;
+				background-size: cover;
+				border 0.1px solid black;
+				position: relative;
+			}
+			.ban1, .ban2 {
+				border: 0.1px solid black;
+				display: table;
+				font: 60px arial;
+				font-weight: bold;
+				color: white;
+				background: #81390070;
+				text-align: center;
+				padding: 15px 25px;
+				position: absolute;
+				top: 60%;
+				left: 35%;
+				transition: 1s;
+			}
+			@keyframes change_background {
+				0% {
+					transform: scale(0.7,0.7);
+				}
+				100% {
+					transform: scale(0.9, 0.9);
+				}
+			}
+			@keyframes change_background2 {
+				0% {
+					transform: scale(1.0,1.0);
+				}
+				100% {
+					transform: scale(1.1, 1.1);
+				}
+			}
+			.content {
+				
+				height: 250px;
+				border 0.1px solid red;
+			}
+			.icon_container {
+				border: 0.1px solid white;
+				border-radius: 50%;
+				padding: 20px;
+				margin: 0px 70px;
+			}
+			.icon {
+				border: 0.1px solid white;
+				border-radius: 50%;
+				font-size: 30px;
+				padding: 20px 30px;
+				color: white;
+			}
+			.bg-img {
+				width: 100%;
+				height: 250px;
+				background-size: cover;
+    				background-repeat: no-repeat;
+    				background-position: center;
+			}
+			.text {
+				border 0.1px solid red;
+				background: #639b23;
+				color: white;
+				font-weight: 400;
+				font-size: 20px;
+			}
+		</style>
+	</head>
+	<body onload="change_banner()">
+		<header>
+			<section id="header">
+				<div>
+					<i class="fa-solid fa-phone" style="margin-right: 5px;"></i>
+					<a href="tel:+912235923835"> +912235923835 </a>
+				</div>
+				<div>
+					<i class="fa-solid fa-paper-plane" style="margin-right: 5px;"></i>
+					<a href="mailto:g@gmail.com"> info@romofyagroindia.com </a>
+				</div>
+				<div>
+					3-5 BUSINESS DAYS DELIVERY & FREE RETURNS
+				</div>
+			</section>
+			<nav>
+				<div class="nav_container">
+					<div>
+						<a href="" target="_blank"><img src="logo.png" style="width: 130px; height: 77px;"/> </a>
+					</div>
+					<div class="navigation">
+						<ul style="list-style: none;">
+							<li> <a href="" target="_blank"> Home </a> </li>
+							<li> <a href="" target="_blank"> About Us </a> </li>
+							<li> <a href="" target="_blank"> Product </a> </li>
+							<li> <a href="" target="_blank"> Our Certificate </a> </li>
+							<li> <a href="" target="_blank"> Contact Us </a> </li>
+						</ul>
+					</div>
+					<div class="cat">
+						<span style="font: 12px arial; letter-spacing: 1px;"> CATEGORIES </span>
+						<div class="cat_list">
+							<li> <a href="" target="_blank"> Hello </a> </li>
+							<li> <a href="" target="_blank"> About </a> </li>
+							<li> <a href="" target="_blank"> Product </a> </li>
+							<li> <a href="" target="_blank"> Our Courier </a> </li>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<section class=" container banner">
+			<div class="ban1">
+				Organic Dry Fruits
+			</div>
+			<div class="ban2">
+				Fresh Organic Vegetables and Fruits
+			</div>
+			
+		</section>
+		<section class="contenter-fluid my-3" style="border: 0.1px solid red;">
+			<div class="container" style="border 0.1px solid red;">
+				<div class="row justify-content-lg-center">
+					<div class="col-lg-3 content text-center py-5">
+						<div class="mb-2 icon_container" style="background: #e4b2d6;">
+							<i class="fa-solid fa-truck icon"></i><br />
+						</div>
+						<div>
+							<span style="font-weight: bold;"> FREE SHIPPING </span> <br /><br/>
+							No Order Over $100
+						</div>					
+					</div>
+					<div class="col-lg-3 content text-center py-5">
+						<div class="mb-2 icon_container" style="background: #dcc698;">
+							<i class="fa-solid fa-wine-glass-empty icon"></i><br />
+						</div>
+						<div>
+							<span style="font-weight: bold;"> ALWAYS FRESH </span> <br /><br/>
+							ALWAYS FRESH
+						</div>					
+					</div>
+					<div class="col-lg-3 content text-center py-5">
+						<div class="mb-2 icon_container" style="background: #a2d1e1;">
+							<i class="fa-solid fa-award icon"></i>
+						</div>
+						<div>
+							<span style="font-weight: bold;"> SUPERIOR QUALITY </span> <br /><br/>
+							BEST QUALITY
+						</div>					
+					</div>
+					<div class="col-lg-3 content text-center py-5">
+						<div class="mb-2 icon_container" style="background: #dcd691;">
+							<i class="fa-solid fa-headset icon"></i><br />
+						</div>
+						<div>
+							<span style="font-weight: bold;"> SUPPORT </span> <br /><br/>
+							24/7 SUPPORT
+						</div>					
+					</div>
+				 </div>
+			</div>
+		</section>
+		<section class="container-fluid my-3" style="border: 0.1px solid red;">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-4 mb-4 content">
+						<div class="bg-img d-flex align-items-end" style="background: url(dry-fruits-500x500-1.jpg) no-repeat center; background-size: cover;">
+							<div class="text px-3 py-1"> Organic Dry Fruits </div>
+						</div>
+					</div>
+					<div class="col-lg-4 mb-4 content">
+						<div class="bg-img d-flex align-items-end" style="background: url('download-1.jpg') no-repeat center; background-size: cover;">
+							<div class="text px-3 py-1"> Organic Flours </div>
+						</div>
+					</div>
+					<div class="col-lg-4 mb-4 content">
+						<div class="bg-img d-flex align-items-end" style="background: url('fruits.jpg') no-repeat center; background-size: cover;">
+							<div class="text px-3 py-1"> Organic Fruit </div>
+						</div>
+					</div>
+					<div class="col-lg-4 mb-4 content">
+						<div class="bg-img d-flex align-items-end" style="background: url('download.jpg') no-repeat center; background-size: cover;">
+							<div class="text px-3 py-1"> Organic Grains </div>
+						</div>
+					</div>		
+					<div class="col-lg-4 mb-4 content">					
+						<div class="bg-img d-flex align-items-end" style="background: url('milk.jpg') no-repeat center; background-size: cover;">
+							<div class="text px-3 py-1"> Organic Milk & Milk Products </div>
+						</div>
+					</div>
+					<div class="col-lg-4 mb-4 content">
+						<div class="bg-img d-flex align-items-end" style="background: url('all-spices.jpg') no-repeat center; background-size: cover;">
+							<div class="text px-3 py-1"> Organic Mix Spices </div>
+						</div>
+					</div>
+					<div class="col-lg-4 mb-4 content">
+						<div class="bg-img d-flex align-items-end" style="background: url('nutritints.jpg') no-repeat center; background-size: cover;">
+							<div class="text px-3 py-1"> Organic Nutrition Diet </div>
+						</div>
+					</div>
+					<div class="col-lg-4 mb-4 content">
+						<div class="bg-img d-flex align-items-end" style="background: url('oil.jpg') no-repeat center; background-size: cover;">
+							<div class="text px-3 py-1"> Organic Oil & Ghee </div>
+						</div>
+					</div>
+					<div class="col-lg-4 mb-4 content">
+						<div class="bg-img d-flex align-items-end" style="background: url('seeds.jpg') no-repeat center; background-size: cover;">
+							<div class="text px-3 py-1"> Organic Seeds </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="container-fluid">
+			<div class="container" style="border: 0.1px solid red;">
+				<div class="row justify-content-center mb-3 pb-3">
+					<div class="col-lg-12 text-center" style="border: 0.1px solid red;">
+						<span> Featured Products </span>
+						<h2 class="my-4"> Our Products </h2>
+						<p> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia </p>
+					</div>
+				</div>
+			</div>
+			<div class="container"  style="border: 0.1px solid red; height: 200px;">
+				<div class="row justify-content-center">
+					<div class="col-lg-3" style="border: 0.1px solid red; height: 200px;">
+						
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+		var i = 1;
+		var j = 1;
+		function timmer() {
+			if(j == 1) {
+				if(i <= 1) {
+					document.querySelector(".banner").style.background = 'url("carousel-banner-1.jpg") no-repeat center';
+					document.querySelector(".ban1").style.display = 'none';
+					document.querySelector(".ban2").style.display = 'block';
+					document.querySelector(".ban2").style.top = '40%';
+					document.querySelector(".ban2").style.left = '30%';
+					document.querySelector(".ban2").style.fontSize = '35px';
+					document.querySelector(".banner").style.animation = 'change_background2 3s';
+					i++;
+				}
+				else {
+					document.querySelector(".banner").style.background = 'url("header-02.jpg") no-repeat center';
+					document.querySelector(".banner").style.animation = 'none';
+					document.querySelector(".ban2").style.display = 'none';
+					document.querySelector(".ban1").style.display = 'block';
+					j++;
+					i = 1;
+					
+				}
+			}
+			if(j == 2) {
+				if(i <= 1) {
+					
+					document.querySelector(".banner").style.animation = 'change_background 4s';
+					i++;
+				}
+				else {
+					j = 1;
+					i = 1;
+					document.querySelector(".banner").style.transform = 'none';
+				}
+			}
+			
+		}
+		function change_banner() {
+			document.querySelector(".ban1").style.top = '40%';
+			document.querySelector(".ban2").style.display = 'none';
+			setInterval(timmer, 2000);
+		}
+		$(".cat").hover (
+			function() {
+				$(".cat_list").slideDown(1000);
+			}, function() {
+				$(".cat_list").slideUp(1000);
+			}
+		);
+	</script>
+</html>
